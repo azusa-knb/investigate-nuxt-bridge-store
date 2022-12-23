@@ -7,7 +7,7 @@
 1. Create nuxt2 project
 
 ```bash
-   npm init nuxt-app investigate-nuxt-bridge-store
+  $ npm init nuxt-app investigate-nuxt-bridge-store
 ```
 
 2. Migrate nuxt2 to nuxt bridge
@@ -27,7 +27,7 @@
 1. Install pinia
 
 ```bash
-npm install @pinia/nuxt
+  $ npm install @pinia/nuxt
 ```
 
 - Step is here <br>
@@ -49,4 +49,8 @@ $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
+
+# Please access this page
+$ open http://localhost:3000/todos/
+
 ```
