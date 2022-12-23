@@ -9,8 +9,10 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
     "core-js": "^3.25.3",
     "nuxt-edge": "latest",
+    "pinia": "^2.0.28",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"

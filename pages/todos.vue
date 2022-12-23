@@ -11,21 +11,24 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
+import { mapStores } from "pinia";
+import { useTodosStore } from "@/store/todos";
+
 export default {
   computed: {
+    ...mapStores(useTodosStore),
     todos() {
-      return this.$store.state.todos.list;
+      return this.todosStore.list;
     },
   },
   methods: {
     addTodo(e) {
-      this.$store.commit("todos/add", e.target.value);
+      this.todosStore.add(e.target.value);
       e.target.value = "";
     },
-    ...mapMutations({
-      toggle: "todos/toggle",
-    }),
+    toggle(todo) {
+      this.todosStore.toggle(todo);
+    },
   },
 };
 </script>
