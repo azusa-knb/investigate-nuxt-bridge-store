@@ -1,6 +1,6 @@
-import { NuxtConfig } from "@nuxt/types";
+import { defineNuxtConfig } from "@nuxt/bridge";
 
-const nuxtConfig: NuxtConfig = {
+export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "investigate-nuxt-bridge-store",
@@ -25,17 +25,9 @@ const nuxtConfig: NuxtConfig = {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    "@nuxt/typescript-build",
-  ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-};
-
-export default nuxtConfig;
+});
